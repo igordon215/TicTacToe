@@ -61,7 +61,7 @@ public class Board {
     }
 
     public Boolean isTie() {
-        if ((isInFavorOfX()) && (isInFavorOfO())){
+        if (!(isInFavorOfX()) && !(isInFavorOfO())){
             return true;
         }
         return false;

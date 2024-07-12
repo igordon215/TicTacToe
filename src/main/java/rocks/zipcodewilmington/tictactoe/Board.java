@@ -3,26 +3,13 @@ package rocks.zipcodewilmington.tictactoe;
 /**
  * @author leon on 6/22/18.
  */
-
-//To determine if a matrix represents a valid winning tic-tac-toe board, we need to check if any of the rows, columns, or diagonals contain three consecutive X's or O's.
-//
-
-//
-//Next, we would check the columns. We would iterate through each column of the matrix and check if all three elements in the column are either X's or O's.
-// If we find a column that contains three consecutive X's or O's, then the board is a valid winning tic-tac-toe board.
-//
-//Finally, we would check the diagonals. We would check the two diagonals of the matrix to see if all three elements in the diagonal are either X's or O's.
-// If we find a diagonal that contains three consecutive X's or O's, then the board is a valid winning tic-tac-toe board.
-//
-//If none of the rows, columns, or diagonals contain three consecutive X's or O's, then the board is not a valid winning tic-tac-toe board.
 public class Board {
     private Character [] [] board;
 
     public Board(Character[][] matrix) {
         this.board = matrix;
     }
-//We can start by checking the rows. We would iterate through each row of the matrix and check if all three elements in the row are either X's or O's.
-// If we find a row that contains three consecutive X's or O's, then the board is a valid winning tic-tac-toe board.
+
     public Boolean isInFavorOfX() {
        for (int i = 0; i < board.length; i++){
            if(board[i][0] == 'X' && board[i][1] == 'X' && board[i][2] == 'X'){
@@ -76,5 +63,4 @@ public class Board {
         }
         return "";
     }
-
 }

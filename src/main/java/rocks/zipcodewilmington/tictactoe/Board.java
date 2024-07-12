@@ -28,7 +28,7 @@ public class Board {
            if(board[i][0] == 'X' && board[i][1] == 'X' && board[i][2] == 'X'){
                return true;
            }
-           if (board[0][i] == 'X' && board [1][i] == '0' && board [2][i] == 'X'){
+           if (board[0][i] == 'X' && board [1][i] == 'X' && board [2][i] == 'X'){
                return true;
            }
        }
